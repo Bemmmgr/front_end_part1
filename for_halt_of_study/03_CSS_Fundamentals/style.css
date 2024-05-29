@@ -1,7 +1,19 @@
-h1, h2, h3, h4, p, li {
+/* 通用选择器,选择页面所有元素 */
+* {
+  /* border-top: #1098ad 10px solid; */
+}
+
+body {
   font-family: sans-serif;
   color: #444;
+
+  border-top: 5px solid #1098ad;
 }
+
+/* h1, h2, h3, h4, p, li {
+  font-family: sans-serif;
+  color: #444;
+} */
 
 h1, h2, h3 {
   color: #1098ad;
@@ -117,7 +129,7 @@ a:link     /*  未访问过的链接  */
 }
 a:visited     /*  已访问的链接  */
 {
-  color: #ad10a5;
+  color: #1098ad;
 }
 a:hover     /*  悬停时的链接  */
 {
@@ -131,8 +143,28 @@ a:active     /*  点击时的链接  */
   background-color: #444;
 }
 
+/* resolving conflicts */
+#copyright {
+  color: #2aae4b;
+}
+.copyright {
+  color: #201d8c;
+}
+.text {
+  color: aquamarine;
+}
+footer p {
+  color: #ad10a5 !important;
+}
 
 
+/* nav a:link,
+nav p {
+  font-size: 38px;
+} */
+nav {
+  font-size: 18px;
+}
 
 
 
