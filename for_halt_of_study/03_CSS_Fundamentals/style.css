@@ -1,6 +1,8 @@
 /* 通用选择器,选择页面所有元素 */
 * {
   /* border-top: #1098ad 10px solid; */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -28,10 +30,15 @@ h1 {
 
 h2 {
   font-size: 30px;
+
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 25px;
+
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 h4 {
@@ -43,10 +50,23 @@ h4 {
 p {
   font-size: 20px;
   line-height: 1.5;
+
+  margin-bottom: 15px;
+}
+
+ul,ol {
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 18px;
+
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -84,6 +104,23 @@ article header p {
 
 .main-header {
   background-color: #f7f7f7;
+
+  padding: 20px 40px;
+  margin-bottom: 60px;
+
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 700px;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
 }
 
 aside {
@@ -92,6 +129,22 @@ aside {
   /* border: #1098ad dashed 5px; */
   border-top: 5px #1098ad dashed;
   border-bottom: 5px #1098ad dotted;
+
+  padding: 50px 0;    /* 第一个值上下，第二个左右 */
+
+  width: 500px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/* nav a:link,
+nav p {
+  font-size: 38px;
+} */
+nav {
+  font-size: 18px;
 }
 
 /* body {
@@ -157,15 +210,12 @@ footer p {
   color: #ad10a5 !important;
 }
 
-
-/* nav a:link,
-nav p {
-  font-size: 38px;
-} */
-nav {
-  font-size: 18px;
+.post-img {
+  /* width: 800px;
+  height: auto; */
+  width: 100%;
+  height: auto;
 }
-
 
 
 
