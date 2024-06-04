@@ -40,7 +40,30 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        /* gap:8px; */
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+
       }
+
+      .el {
+        /*  Defaults:
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: auto;
+         */
+        flex: 0 1 200px;
+      }
+
+      /* 对于单个元素 flex items */
+      .el--1 {
+        align-self: stretch;
+      }
+
+
+
     </style>
   </head>
   <body>
