@@ -17,6 +17,7 @@ Value: 0.5 / 0.75 px
 - Shades(lighter): #fdf2e9 #fae5d3
 - Greys: #555 #333 #888
 - remember color contrast
+- #94d82d #ffd43b
 
 03 IMAGES & 04 FACES
 - unsplash
@@ -26,7 +27,8 @@ Value: 0.5 / 0.75 px
 - stay consistency
 
 06 BORDER RADIOUS
-- Default: 9px
+- Default: 9px 
+- 12px
 
 07 WHITESPACE
 - SPACING SYSTEM (px)
@@ -172,4 +174,8 @@ body {
 /************************************/
 .margin-right-sm {
   margin-right: 2rem;
+}
+
+strong {
+  font-weight: 500;
 }
