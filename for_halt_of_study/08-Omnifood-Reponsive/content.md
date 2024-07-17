@@ -119,26 +119,24 @@ Create account
 Sign in
 iOS app
 Android app
-
 About Omnifood
 For Business
 Cooking partners
 Careers
-
 Recipe directory
 Help center
 Privacy & terms
 
 ######
 
-## Sections
+## sections
 
-- Logo + Navigation
+- Navigation
 - Hero
-- Featured in
+- Logos of featured publication 
 - How it works
-- Meals (and list of diets)
-- Testimonials + gallery
-- Pricing + features
-- CTA
+- Sample meals- Diets
+- Testimonials- Food gallery
+- Pricing- Contract info- Features 
+- Call to action Sign up slogan
 - Footer
