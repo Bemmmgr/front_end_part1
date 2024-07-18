@@ -1,0 +1,136 @@
+/* 
+  rem and em do NOT depend on HTML font-size in media queries  
+  rem is root font-size, em is current font-size
+  1rem = 1em = 16px
+  in media should NOT use rem(bug)
+  media queries should work over a range of at least 200px or 300px
+*/
+
+/************************************/
+/* BELOW 1344px(Smaller desktops)*/
+/* 1344/16 = 84 */
+/************************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primiary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/************************************/
+/*  BELOW 1200px(Landscape tablets)  */
+/*        1200/16 = 75               */
+/************************************/
+@media (max-width: 75em) {
+  html {
+    /* original: 10px
+    9px / 16 = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/************************************/
+/*  BELOW 940px(Tablets)  */
+/*        944/16 = 59               */
+/************************************/
+@media (max-width: 59em) {
+  html {
+    /* original: 16px
+    8px / 16 = 0.5 */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 6rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 3.2rem;
+    padding-top: 2.4rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6,1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 1.2rem;
+  }
+
+}
+
+
