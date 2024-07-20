@@ -41,7 +41,6 @@
   }
 
   .grid {
-    display: grid;
     column-gap: 4.8rem;
     row-gap: 6.4rem;
   }
@@ -143,12 +142,12 @@
     left: 0;
     width: 100%;
     height: 100vh;
+    transform: translateX(100%);
 
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
-    transform: translateX(100%);
 
     /* Hide Navigation */
     /* display: none; */
@@ -197,12 +196,6 @@
 /*        704/16 = 44               */
 /************************************/
 @media (max-width: 44em) {
-  html {
-    /* original: 16px
-    8px / 16 = 0.5 */
-    font-size: 50%;
-  }
-
   .grid-3-cols, 
   .grid-4-cols {
     grid-template-columns: repeat(2,1fr);
@@ -230,10 +223,82 @@
     grid-column: span 3;
   }
 
-
   .nav-col {
     grid-row: 1;
     grid-column: span 2;
     margin-bottom: 3.2rem;
+  }
+}
+
+/************************************/
+/*  BELOW 544px(Phones)  */
+/*        544/16 = 34               */
+/************************************/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid-2-cols,
+  .grid-3-cols, 
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+  
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.6rem;
+  }
+
+  /* 在此处为container容器的第二个元素 */
+  .step-img-box:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .step-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+
+  .step-img-box {
+    transform: translateY(-2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    grid-row: 1;
+    height: 45rem;
   }
 }
