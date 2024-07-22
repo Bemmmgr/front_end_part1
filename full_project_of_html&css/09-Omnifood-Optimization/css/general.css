@@ -55,6 +55,12 @@ html {
   */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* 
+    链接的自动跳转效果
+    does not work on safari
+  */
+  /* scroll-behavior: smooth; */
 }
 
 body {
