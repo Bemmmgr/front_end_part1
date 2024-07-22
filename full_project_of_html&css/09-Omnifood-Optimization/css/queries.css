@@ -138,7 +138,7 @@
 
   .main-nav {
     position: absolute;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.97);
     top: 0;
     left: 0;
     width: 100%;
